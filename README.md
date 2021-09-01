@@ -2,17 +2,15 @@
 
 ### Complete Project Domain Model
 ===============================
-| class            | class                   |
-|------------------|-------------------------|
-| class            | Oystercard              |        
+| class            | Oystercard              |
+|------------------|-------------------------|     
 | variable         | maximum_amount: Integer |
 | variable         | minimum_amount: Integer |
 | variable         | balance: Integer        |
-| variable         |        |
 | class            |                         |
 | methods          | touch_in()              |
 | methods          | touch_out()             |
-| methods          | add_money()             |
+| methods          | top_up()                |
 | methods          | deduct_fare()           |
 -------------------
 ### User story 1-4 Domain Model
@@ -23,7 +21,7 @@
 | class            | Oystercard              |        
 | variable         | maximum_amount: Integer |
 | variable         | balance: Integer        |
-| methods          | add_money()             |
+| methods          | top_up()                |
 | methods          | deduct_fare()           |
 
 
