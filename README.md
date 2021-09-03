@@ -22,7 +22,7 @@
 | variable         | maximum_amount: Integer |
 | variable         | balance: Integer        |
 | methods          | top_up()                |
-| methods          | deduct_fare()           |
+| methods          | deduct()           |
 
 
 ```

@@ -28,6 +28,12 @@ describe Oystercard do
   end
 
   describe "#top_up" do
+
+    before (:each) do 
+      @subject = Oystercard.new
+      @subject.top_up(Oystercard::MAXIMUM_AMOUNT)
+    end
+
     it 'tops up oystercard' do
       expect{ subject.top_up(1) }.to change { subject.balance }.by(1)
     end
@@ -39,10 +45,23 @@ describe Oystercard do
 
     describe "#deduct" do
       it 'deducts fare' do
-        subject.top_up(20)
+        # subject.top_up(20)
         expect{ subject.deduct(1) }.to change { subject.balance }.by(-1)
       end
     end
+
+
+      # describe "tests that require top up" do 
+  
+
+      # it "should deduct fare" do
+      # expect {@oyster.deduct(5)}.to change {@oyster.balance}.by -5
+      # end
+
+      # it "should touch in" do 
+      # expect
+
+
 
     # describe "#touch_in" do 
     #   it "shows that I am on a journey when I touch in" do 
